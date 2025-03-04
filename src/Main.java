@@ -24,7 +24,7 @@ public class Main {
         System.out.println(checkChar);*/
 
         // reverse a number
-        Scanner sc = new Scanner(System.in);
+        /*Scanner sc = new Scanner(System.in);
         System.out.println("Enter your pefered number");
         int num = sc.nextInt();
 
@@ -34,7 +34,20 @@ public class Main {
             rev = rev * 10 + num % 10;
             num = num/10;
         }
+        System.out.println(rev);*/
+
+        //convert a letter word in to descending order
+        String str = "ABCD";
+        String rev = "";
+
+        char[] a = str.toCharArray();
+        int len = a.length;
+
+        for(int i=len-1; i>=0; i--){
+            rev = rev + a[i];
+        }
         System.out.println(rev);
+
     }
 
 
