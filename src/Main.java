@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -69,14 +70,30 @@ public class Main {
         System.out.println( );*/
 
         //Take the length of a given string without length method.
-        String charCount = "LearnAutomation";
+        /*String charCount = "LearnAutomation";
         char[] a = charCount.toCharArray();
         int length = 0;
 
         for(Character c: a){
             length++;
         }
-        System.out.println(length);
+        System.out.println(length);*/
+        //make descending order of a given set of integers
+        int[] numbers = {7,3,5,9,1};
+        Arrays.sort(numbers);
+        reverseArray(numbers);
+
+        System.out.println("Descending order " + Arrays.toString(numbers));
+
+
+            }
+    //make descending order of a given set of integers
+            public static void reverseArray(int[] arr){
+        for(int i =0, j= arr.length-1; i<j;i++, j++){
+            int temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+        }
     }
 
 }
