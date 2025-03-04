@@ -55,7 +55,7 @@ public class Main {
         System.out.println(sb.reverse());*/
 
         //Making a triangle pattern
-        Scanner sc = new Scanner(System.in);
+        /*Scanner sc = new Scanner(System.in);
         System.out.println("Enter the rows and column count you want ");
         int numberLines = sc.nextInt();
         int row, column = 0;
@@ -66,7 +66,17 @@ public class Main {
             }
 
         }
-        System.out.println( );
+        System.out.println( );*/
+
+        //Take the length of a given string without length method.
+        String charCount = "LearnAutomation";
+        char[] a = charCount.toCharArray();
+        int length = 0;
+
+        for(Character c: a){
+            length++;
+        }
+        System.out.println(length);
     }
 
 }
