@@ -37,7 +37,7 @@ public class Main {
         System.out.println(rev);*/
 
         //convert a letter word in to descending order
-        String str = "ABCD";
+        /*String str = "ABCD";
         String rev = "";
 
         char[] a = str.toCharArray();
@@ -46,9 +46,27 @@ public class Main {
         for(int i=len-1; i>=0; i--){
             rev = rev + a[i];
         }
-        System.out.println(rev);
+        System.out.println(rev);*/
 
+        /*String str = "ABCDEFGH";
+        String rev = "";
+
+        StringBuffer sb = new StringBuffer(str);
+        System.out.println(sb.reverse());*/
+
+        //Making a triangle pattern
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the rows and column count you want ");
+        int numberLines = sc.nextInt();
+        int row, column = 0;
+
+        for(row=0; row>numberLines; row++){
+            for(column=0; column>=row; column++){
+                System.out.print(" *");
+            }
+
+        }
+        System.out.println( );
     }
-
 
 }
