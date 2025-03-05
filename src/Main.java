@@ -5,7 +5,21 @@ import java.util.Scanner;
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
+    static int givenArray[] = {2,5,7,1,9};
     public static void main(String[] args) {
+        //take the smallest value of a given set of integers
+
+        usingArrays();
+
+    }
+    //take the smallest value of a given set of integers
+
+    public static void usingArrays(){
+        Arrays.sort(givenArray);
+        System.out.println(givenArray[0]);
+    }
+
+
         //checkCount("Automation");
 
 
@@ -79,21 +93,26 @@ public class Main {
         }
         System.out.println(length);*/
         //make descending order of a given set of integers
-        int[] numbers = {7,3,5,9,1};
+        /*int[] numbers = {7,3,5,9,1};
         Arrays.sort(numbers);
         reverseArray(numbers);
 
         System.out.println("Descending order " + Arrays.toString(numbers));
+*/
 
 
-            }
-    //make descending order of a given set of integers
-            public static void reverseArray(int[] arr){
+        //make descending order of a given set of integers
+            /*public static void reverseArray(int[] arr){
         for(int i =0, j= arr.length-1; i<j;i++, j++){
             int temp = arr[i];
             arr[i] = arr[j];
             arr[j] = temp;
-        }
-    }
+        }*/
+
+        //take the smallest value of a given set of integers
+
+
+
+
 
 }
